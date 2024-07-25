@@ -10,5 +10,5 @@ WORKDIR /runtime-app
 COPY --from=build-env /app/publish .
 
 EXPOSE 8080
-ENTRYPOINT["dotnet", "NewsletterAPI.dll"]
+ENTRYPOINT ["dotnet", "NewsletterAPI.dll"]
 
